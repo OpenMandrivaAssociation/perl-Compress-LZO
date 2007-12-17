@@ -12,7 +12,6 @@ Source0:	%{real_name}-%{version}.tar.bz2
 Patch:		Compress-LZO-1.08-lzo2.patch
 BuildRequires:	perl-devel
 BuildRequires:	liblzo2-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 LZO is a portable lossless data compression library written in ANSI C. It
