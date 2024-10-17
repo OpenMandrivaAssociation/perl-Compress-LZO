@@ -8,7 +8,7 @@ Release:	6
 Summary:	Compress-LZO module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Compress/%{upstream_name}-%{upstream_version}.tar.bz2
 # seems a hack, but since we don't have liblzo1-devel...
 Patch:		Compress-LZO-1.08-lzo2.patch
