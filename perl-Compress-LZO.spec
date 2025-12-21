@@ -13,6 +13,7 @@ Source0:	http://www.cpan.org/modules/by-module/Compress/%{upstream_name}-%{upstr
 # seems a hack, but since we don't have liblzo1-devel...
 Patch:		Compress-LZO-1.08-lzo2.patch
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	liblzo2-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
