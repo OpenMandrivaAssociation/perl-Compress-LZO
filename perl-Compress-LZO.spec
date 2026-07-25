@@ -1,15 +1,15 @@
 %define upstream_name    Compress-LZO
-%define upstream_version 1.08
+%define upstream_version 1.09
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	6
+Version:    %{upstream_version}
+Release:	1
 
 Summary:	Compress-LZO module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Compress/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://github.com/pepl/compress-lzo
+Source0:	https://cpan.metacpan.org/authors/id/P/PE/PEPL/Compress-LZO-%{upstream_version}.tar.gz
 # seems a hack, but since we don't have liblzo1-devel...
 Patch:		Compress-LZO-1.08-lzo2.patch
 
