@@ -1,15 +1,13 @@
 %define upstream_name    Compress-LZO
-%define upstream_version 1.09
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    1.09
+Release:	2
 
 Summary:	Compress-LZO module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/pepl/compress-lzo
-Source0:	https://cpan.metacpan.org/authors/id/P/PE/PEPL/Compress-LZO-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PE/PEPL/Compress-LZO-%{version}.tar.gz
 # seems a hack, but since we don't have liblzo1-devel...
 Patch:		Compress-LZO-1.08-lzo2.patch
 
@@ -26,7 +24,7 @@ access the LZO library from your Perl scripts thereby compressing ordinary Perl
 strings.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 %patch -p1
 
 %build
@@ -64,9 +62,7 @@ rm -rf %{buildroot}
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.80.0-1mdv2010.0
 + Revision: 403025
-- rebuild using %%perl_convert_version
-
-* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 1.08-7mdv2009.0
+- rebuild using %1.09 Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 1.08-7mdv2009.0
 + Revision: 256041
 - rebuild
 
